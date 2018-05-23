@@ -1,9 +1,12 @@
-# Log Analysis Project
-Source code for a Movie Trailer website.
+# Log Analysis Tool
+Source code for a log analysis reporting tool.
 
-This project is used to create a website that list my favorite movies along with their posters. When a user clicks on one of the posters, a trailer of the movie from Youtube plays in the same window.
+This reporting tool is a Python program using the psycopg2 module to connect to the database. Running this code prints out reports (in plain text) based on the data in a database called "news", and presumes the user has the "news" database on their machine.
 
-This project is forked from Udacity's ud036_StarterCode. I implemented functionality in Python that generates a series of "Movie" classes, which are then used in launching a browser window with the newly created HTML website.
+The reports answered in the following questions:
+1. What are the most popular three articles of all time? 
+2. Who are the most popular article authors of all time?
+3. On which days did more than 1% of requests lead to errors? 
 
 
 ### Prerequesites
@@ -19,27 +22,33 @@ git --version
 From the Terminal, clone this repo onto your computer with:
 
 ```
-git clone https://github.com/lewisisgood/ud036_StarterCode
+git clone https://github.com/lewisisgood/logs-analysis
 ```
 
 Move into the new directory:
 
 ```
-cd ud036_StarterCode/
+cd logs-analysis/
 ```
 
-Run the entertainment_center.py to generate the movie trailer website:
+Install required libraries:
 
 ```
-python entertainment_center.py
+sudo pip3 install -r requirements.txt
 ```
 
-This will create an HMTL file called "fresh_tomatoes.html" and launch a browser displaying this new website.
+Run the loganalysis.py to generate the report:
+
+```
+python loganalysis.py
+```
+
+This will output a formatted version of my query results in the Terminal.
 
 
 ## Built With
 
-* Python 2.7.14
+* Python 3.5.2
 * git 2.14.1
 
 ## Authors
@@ -48,4 +57,4 @@ This will create an HMTL file called "fresh_tomatoes.html" and launch a browser 
 
 ## Acknowledgments
 
-* Thanks to Udacity for the starter code!
+* Thanks to Udacity for the Ubuntu VM and database creation file!
