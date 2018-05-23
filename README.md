@@ -40,7 +40,7 @@ sudo pip3 install -r requirements.txt
 Run the loganalysis.py to generate the report:
 
 ```
-python loganalysis.py
+python3 loganalysis.py
 ```
 
 This will output a formatted version of my query results in the Terminal.
