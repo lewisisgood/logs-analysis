@@ -3,7 +3,7 @@ Source code for a log analysis reporting tool.
 
 This reporting tool is a Python program using the psycopg2 module to connect to the database. Running this code prints out reports (in plain text) based on the data in a database called "news", and presumes the user has the "news" database on their machine.
 
-The reports answered in the following questions:
+The report answers in the following questions:
 1. What are the most popular three articles of all time? 
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors? 
@@ -57,4 +57,4 @@ This will output a formatted version of my query results in the Terminal.
 
 ## Acknowledgments
 
-* Thanks to Udacity for the Ubuntu VM and database creation file!
+* Thanks to Udacity for the Ubuntu VM and database creation file, which helped me make this project!
